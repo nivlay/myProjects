@@ -1,0 +1,75 @@
+body {
+    text-align: center;
+    margin: auto;
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+.container {
+    margin-bottom: 20px;
+    position: relative;
+    height: 700px;
+}
+
+button {
+    display: none;
+    margin: 20px auto;
+    border: 1px solid black;
+    background-color: rgb(216, 140, 140);
+    color: rgb(89, 1, 19);
+    border-radius: 5px;
+    padding: 5px;
+    display: inline;
+}
+
+.difficulty-container button {
+    padding: 10px;
+    margin: 20px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    font-size: 16px;
+    font-family: fantasy;
+}
+
+h1 {
+    color: rgb(10, 7, 19);
+    font-family: fantasy;
+    font-size: 55px;
+}
+
+h3 {
+    color: rgb(10, 7, 19);
+    font-family: fantasy;
+    font-size: 30px;
+}
+
+table {
+    border: 3px solid black;
+    table-layout: fixed;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    background: rgb(172, 136, 189);
+    background: linear-gradient(90deg, rgba(172, 136, 189, 0.6839110644257703) 15%, rgb(200, 129, 145) 100%);
+}
+
+.reset {
+    display: none;
+}
+
+#timer {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 150px;
+    margin-top: 100px;
+    display: block;
+    position: absolute;
+    background-color: rgb(233, 233, 157);
+    /* padding: 20px; */
+    border-radius: 9px;
+    color: maroon;
+}

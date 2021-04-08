@@ -1,0 +1,95 @@
+html {
+    height: 100%;
+    background-image: url(https://wallpaperaccess.com/full/124383.jpg);
+}
+
+body {
+    box-sizing: border-box;
+    min-height: 100%;
+    margin: 0 auto;
+    padding: 2em;
+    max-width: 70%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2em;
+    background-color: rgb(189, 187, 187);
+}
+
+h1 {
+    color: rgb(179, 34, 73);
+}
+
+a {
+    display: block;
+    margin: 12px 12px 12px 0;
+    color: rgb(20, 20, 164);
+    cursor: pointer;
+}
+
+.adding-book {
+    margin-bottom: 20px;
+}
+
+.table {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.table-cell {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.3em 1.2em;
+    border-right: solid 1px rgb(179, 34, 73);
+    border-bottom: dashed 1px rgb(179, 34, 73);
+    border-radius: 12px;
+}
+
+button {
+    margin: 0 5px;
+    box-shadow: inset 0px 39px 0px -24px #e67a73;
+    background-color: #b6534a;
+    border-radius: 4px;
+    border: 1px solid #ffffff;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    padding: 6px 15px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #b23e35;
+}
+
+button:hover {
+    background-color: #eb675e;
+}
+
+button:active {
+    position: relative;
+    top: 1px;
+}
+
+.table-cols .table-cell {
+    width: 25%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+.update-price {
+    margin-top: 20px;
+}
+
+.modal {
+    position: fixed;
+    text-align: center;
+    background-color: hsla(0, 34%, 30%, 0.8);
+    color: rgb(181, 113, 113);
+    padding: 30px;
+    border-radius: 12px;
+    top: 40%
+}

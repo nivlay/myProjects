@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Touch-Nums</title>
+  </head>
+  <body onload="init()">
+    <div class="container">
+      <h1>Touch The Numbers</h1>
+      <div class="difficulty-container">
+        <h3>Please select difficulty:</h3>
+        <button id="easy" onclick="getDifficulty(this)">Easy(16)</button>
+        <button id="hard" onclick="getDifficulty(this)">Hard(25)</button>
+        <button id="extreme" onclick="getDifficulty(this)">Extreme(36)</button>
+        <p id="timer"></p>
+      </div>
+      <table border="1" cellpadding="10" class="board">
+        <tbody></tbody>
+      </table>
+      <button class="reset" onclick="resetGame(this)">Play Again</button>
+    </div>
+    <script src="./touch-nums.js"></script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/app.css" />
+    <title>Mine Sweeper</title>
+
+
+  </head>
+  <body onload="initGame()">
+    <h1>Minesweeper Game</h1>
+    <div class="container">
+      <div class="top-bar">
+        <div class="score">
+          <p>Score:<span>0</span></p>
+        </div>
+        <div class="timer">
+          <p>Time: <span></span></p>
+        </div>
+        <div class="life">
+          <p>Life: <span>2</span></p>
+        </div>
+        <div class="emoji" onclick="resetGame()">😁</div>
+      </div>
+      <div class="board-container"></div>
+      <h2>Game Over!</h2>
+      <h3>Danger! Mine Has Spotted</h3>
+      <div class="hints">
+        <!-- Hints:
+        <p onclick="handleHints(this)">🌕</p>
+        <p onclick="handleHints(this)">🌕</p>
+        <p onclick="handleHints(this)">🌕</p> -->
+        <button onclick="handleSafeClick(this)">
+          Safe Click: <span>3</span>
+        </button>
+      </div>
+      <button class="difficulty beginner" onclick="getDifficulty(this)">
+        Beginner
+      </button>
+      <button class="difficulty medium" onclick="getDifficulty(this)">
+        Medium
+      </button>
+      <button class="difficulty expert" onclick="getDifficulty(this)">
+        Expert
+      </button>
+    </div>
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
