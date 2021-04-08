@@ -33,7 +33,7 @@ function createQuests() {
 function renderQuest() {
   var currQuest = gQuests[gCurrQuestIdx];
   var strHtml = '';
-  strHtml += `<tr><td><img src="./img/${currQuest.id}.png"/></td></tr>`;
+  strHtml += `<tr><td><img src="img/${currQuest.id}.png"/></td></tr>`;
   var options = currQuest.opts;
   for (var i = 0; i < options.length; i++) {
     strHtml += `<tr><td onclick="checkAnswer(${i})">${options[i]}</td></tr>`;
